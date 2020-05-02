@@ -7,7 +7,7 @@ function load() {
 function reset() {
     var state = {};
     save(state);
-    browser.tabs.reload();
+    location.reload();
 }
 function loadprogress(){
     var state = load();
