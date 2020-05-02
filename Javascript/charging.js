@@ -18,9 +18,19 @@ function claimCharge() {
         charge = 0;
         var state = load();
         state.copper +=1;
-        save(state);
         document.getElementById("copper").innerHTML = state.copper;
         document.getElementById("charge").innerHTML = charge;
+        state.rewards+=1;
+        save(state);
+    }
+    if (state.rewards == 10) {
+        document.getElementById("silver").style.display = "block";
+    }
+    if (state.rewards == 100) {
+        document.getElementById("gold").style.display = "block";
+    }
+    if (state.rewards == 1000) {
+        document.getElementById("platinum").style.display = "block";
     }
 }
     
