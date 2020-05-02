@@ -11,7 +11,7 @@ function reset() {
 }
 function edit(toEdit, change) {
     var state = load();
-    state.toEdit = change;
+    state[toEdit] = change;
     save(state);
 }
 function loadprogress(){
