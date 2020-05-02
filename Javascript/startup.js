@@ -4,6 +4,11 @@ function save(state) {
 function load() {
     return JSON.parse(localStorage.getItem("gamestate"));
 }
+function reset() {
+    var state = {};
+    save(state);
+    browser.tabs.reload();
+}
 function loadprogress(){
     var state = load();
     if (state.started == true) {
