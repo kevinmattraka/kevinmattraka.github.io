@@ -18,11 +18,13 @@ function loadprogress(){
     var state = load();
     if (state.started == true) {
         var x = document.getElementById("start");
-        var y = document.getElementById("everything");
+        var y = document.getElementById("copper");
+        var z = document.getElementById("charger")
         //removes the startgame button
         x.style.display = "none";
         //shows the rest of the game
         y.style.display = "block";
+        z.style.display = "block";
     }
     document.getElementById("copper").innerHTML = state.copper;
     document.addEventListener("click", claimCharge);
