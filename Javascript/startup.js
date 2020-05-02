@@ -9,6 +9,11 @@ function reset() {
     save(state);
     location.reload();
 }
+function edit(toEdit, change) {
+    var state = load();
+    state.toEdit = change;
+    save(state);
+}
 function loadprogress(){
     var state = load();
     if (state.started == true) {
