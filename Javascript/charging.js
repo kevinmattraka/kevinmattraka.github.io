@@ -14,9 +14,9 @@ function chargerUpdate() {
     }
 }
 function claimCharge() {
+    var state = load();
     if (charge == 1000){
         charge = 0;
-        var state = load();
         state.copper +=1;
         document.getElementById("copper").innerHTML = state.copper;
         document.getElementById("charge").innerHTML = charge;
@@ -24,13 +24,13 @@ function claimCharge() {
         save(state);
     }
     if (state.rewards == 10) {
-        document.getElementById("silver").style.display = "block";
+        document.getElementById("showsilver").style.display = "block";
     }
     if (state.rewards == 100) {
-        document.getElementById("gold").style.display = "block";
+        document.getElementById("showgold").style.display = "block";
     }
     if (state.rewards == 1000) {
-        document.getElementById("platinum").style.display = "block";
+        document.getElementById("showplatinum").style.display = "block";
     }
 }
     

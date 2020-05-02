@@ -18,7 +18,7 @@ function loadprogress(){
     var state = load();
     if (state.started == true) {
         var x = document.getElementById("start");
-        var y = document.getElementById("copper");
+        var y = document.getElementById("showcopper");
         var z = document.getElementById("charger")
         //removes the startgame button
         x.style.display = "none";
