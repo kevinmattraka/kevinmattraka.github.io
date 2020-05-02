@@ -6,10 +6,5 @@ function startgame() {
         copper:0
     };
     save(state);
-    var x = document.getElementById("start");
-    var y = document.getElementById("everything");
-    //removes the startgame button
-    x.style.display = "none";
-    //shows the rest of the game
-    y.style.display = "block";
+    loadprogress();
 }
