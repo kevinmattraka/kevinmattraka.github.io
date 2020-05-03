@@ -5,11 +5,11 @@ function startgame() {
         chargepower: 1,
         copper:0,
         silver: 0,
-        showsilver = false,
+        showsilver: false,
         gold: 0,
-        showgold = false,
+        showgold: false,
         platinum: 0,
-        showplatinum = false,
+        showplatinum: false,
         rewards: 0
     };
     save(state);
