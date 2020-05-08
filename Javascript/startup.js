@@ -24,6 +24,7 @@ function loadprogress(){
         x.style.display = "none";
         //shows the rest of the game
         y.style.display = "block";
+        z.style.display = "block";
         if (state.showsilver == true) {
             document.getElementById("showsilver").style.display = "block";
             document.getElementById("silver").innerHTML = state.silver;
