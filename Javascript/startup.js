@@ -19,12 +19,11 @@ function loadprogress(){
     if (state.started == true) {
         var x = document.getElementById("start");
         var y = document.getElementById("showcopper");
-        var z = document.getElementById("charger")
+        var z = document.getElementById("mainButton");
         //removes the startgame button
         x.style.display = "none";
         //shows the rest of the game
         y.style.display = "block";
-        z.style.display = "block";
         if (state.showsilver == true) {
             document.getElementById("showsilver").style.display = "block";
             document.getElementById("silver").innerHTML = state.silver;
@@ -39,8 +38,4 @@ function loadprogress(){
         }
     }
     document.getElementById("copper").innerHTML = state.copper;
-    document.addEventListener("click", claimCharge);
-    document.addEventListener("keypress", claimCharge);
-    document.addEventListener("mousemove", claimCharge);
-    startcharger();
 }

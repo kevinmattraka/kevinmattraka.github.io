@@ -2,7 +2,6 @@
 function startgame() {
     var state = {
         started: true,
-        chargepower: 1,
         copper:0,
         silver: 0,
         showsilver: false,

@@ -3,11 +3,14 @@
         <title>Incremental</title>
         <script type="text/javascript" src="Javascript/startup.js"></script>
         <script type="text/javascript" src="Javascript/start.js"></script>
-        <script type="text/javascript" src="Javascript/charging.js"></script>
+        <script type="text/javascript" src="Javascript/mainbutton.js"></script>
     </head>
     <body>
         <div id=start>
             <button onclick="startgame()">Start The Game</button>
+        </div>
+        <div id=mainButton style="display: none;">
+            <button onclick="claimButtonRewards()">Get Stuff</button>
         </div>
         <div id=basicMoney>
             <div id=showcopper style="display: none;">Copper: <span id=copper>0</span></div>
